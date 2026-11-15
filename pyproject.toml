@@ -41,6 +41,7 @@ dev = ["pytest>=8", "anyio>=4", "build", "twine"]
 
 [project.urls]
 Homepage = "https://github.com/RTY2345RR/podcast-generator-mcp"
+Demo = "https://huggingface.co/spaces/miragea/podcast-generator-mcp"
 Repository = "https://github.com/RTY2345RR/podcast-generator-mcp"
 Documentation = "https://github.com/RTY2345RR/podcast-generator-mcp#readme"
 Issues = "https://github.com/RTY2345RR/podcast-generator-mcp/issues"

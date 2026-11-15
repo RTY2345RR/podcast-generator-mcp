@@ -9,6 +9,7 @@ Workflow: podcast_create_show(title, hosts=[{name, reference_audio_url, referenc
 ## Docs
 - [README](https://github.com/RTY2345RR/podcast-generator-mcp#readme): features, quick start, script format, tools, RSS publishing, comparison, FAQ, troubleshooting
 - [Example: two-host podcast demo (MP3, SRT, chapters, RSS)](https://github.com/RTY2345RR/podcast-generator-mcp/tree/main/examples/two-host-podcast-demo)
+- [Live demo with audio](https://huggingface.co/spaces/miragea/podcast-generator-mcp)
 - [Changelog](https://github.com/RTY2345RR/podcast-generator-mcp/blob/main/CHANGELOG.md)
 
 ## Related

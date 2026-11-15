@@ -5,12 +5,13 @@
 [![Docker](https://img.shields.io/docker/v/miragea/podcast-generator-mcp?label=docker)](https://hub.docker.com/r/miragea/podcast-generator-mcp)
 [![Python](https://img.shields.io/badge/python-3.10%E2%80%933.13-blue.svg)](pyproject.toml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Live demo](https://img.shields.io/badge/demo-Hugging%20Face-yellow.svg)](https://huggingface.co/spaces/miragea/podcast-generator-mcp)
 
 **Podcast Generator MCP is an open-source podcast MCP server that turns any AI agent (Claude, Cursor, Codex, VS Code, Windsurf) into an AI podcast generator: the agent writes a two-host dialogue script, and the server voices every line with each host's own cloned voice, stitches one loudness-normalized MP3, and exports a transcript SRT, chapters and a podcast RSS item and feed.** You say *"make a 10-minute episode about this PDF with Leo and Maya"*; the agent reads the source and writes the script, the server does everything that touches audio. It is text to podcast, inside the tools you already use.
 
 ![Podcast generator MCP demo: Claude creates a two-host AI podcast with a male and a female cloned voice, waveform, synced SRT transcript and chapters](docs/images/podcast-generator-mcp-two-host-ai-podcast-demo.png)
 
-▶ **Listen to the real output:** [two-host episode (MP3, 14 s)](examples/two-host-podcast-demo/meet-your-ai-podcast-hosts.mp3) · [transcript SRT](examples/two-host-podcast-demo/meet-your-ai-podcast-hosts.srt) · [chapters JSON](examples/two-host-podcast-demo/meet-your-ai-podcast-hosts.chapters.json) · [RSS feed](examples/two-host-podcast-demo/feed.xml) · [input script](examples/two-host-podcast-demo/script.md). Leo (male) and Maya (female) are both cloned from short public clips.
+▶ **Listen to the real output:** [two-host episode (MP3, 14 s)](examples/two-host-podcast-demo/meet-your-ai-podcast-hosts.mp3) · [transcript SRT](examples/two-host-podcast-demo/meet-your-ai-podcast-hosts.srt) · [chapters JSON](examples/two-host-podcast-demo/meet-your-ai-podcast-hosts.chapters.json) · [RSS feed](examples/two-host-podcast-demo/feed.xml) · [input script](examples/two-host-podcast-demo/script.md) · or play it in the browser on the [Hugging Face demo page](https://huggingface.co/spaces/miragea/podcast-generator-mcp). Leo (male) and Maya (female) are both cloned from short public clips.
 
 <!-- mcp-name: io.github.RTY2345RR/podcast-generator-mcp -->
 
