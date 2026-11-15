@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:01,760
+Leo: Welcome to The Voice Lab,
+
+2
+00:00:01,760 --> 00:00:06,476
+the podcast your AI agent writes and produces from a single script.
+
+3
+00:00:06,826 --> 00:00:10,392
+Maya: And every voice you hear, mine included, is cloned from a short clip,
+
+4
+00:00:10,392 --> 00:00:13,701
+so you can make a two-host show with your own voices in minutes.

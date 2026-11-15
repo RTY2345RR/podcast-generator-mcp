@@ -1,0 +1,52 @@
+# Release -> Docker Hub (miragea/podcast-generator-mcp) -> official MCP Registry (OCI package, GitHub OIDC).
+# PyPI (trusted publishing) runs only when started by hand with pypi=true, once the PyPI publisher exists.
+name: Publish
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      pypi:
+        description: "Also publish to PyPI (trusted publisher must exist)"
+        type: boolean
+        default: false
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    env:
+      DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-qemu-action@v3
+      - uses: docker/setup-buildx-action@v3
+      - name: Log in to Docker Hub
+        run: echo "$DOCKERHUB_TOKEN" | docker login -u miragea --password-stdin
+      - name: Build and push (amd64 + arm64)
+        run: |
+          VERSION=$(grep -m1 '^version' pyproject.toml | cut -d'"' -f2)
+          docker buildx build --platform linux/amd64,linux/arm64 --push \
+            -t miragea/podcast-generator-mcp:$VERSION -t miragea/podcast-generator-mcp:latest .
+  mcp-registry:
+    needs: docker
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install mcp-publisher
+        run: curl -L "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_linux_amd64.tar.gz" | tar xz mcp-publisher
+      - run: ./mcp-publisher login github-oidc
+      - run: ./mcp-publisher publish
+  pypi:
+    if: github.event_name == 'workflow_dispatch' && inputs.pypi
+    runs-on: ubuntu-latest
+    environment: pypi
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv build
+      - uses: pypa/gh-action-pypi-publish@release/v1

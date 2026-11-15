@@ -1,0 +1,17 @@
+{
+  "title": "The Voice Lab",
+  "description": "A demo show made with podcast-generator-mcp.",
+  "author": "podcast-generator-mcp",
+  "hosts": [
+    {
+      "name": "Leo",
+      "reference_audio_url": "http://festvox.org/cmu_arctic/cmu_arctic/cmu_us_bdl_arctic/wav/arctic_a0003.wav",
+      "reference_text": "For the twentieth time that evening the two men shook hands."
+    },
+    {
+      "name": "Maya",
+      "reference_audio_url": "http://festvox.org/cmu_arctic/cmu_arctic/cmu_us_slt_arctic/wav/arctic_a0003.wav",
+      "reference_text": "For the twentieth time that evening the two men shook hands."
+    }
+  ]
+}

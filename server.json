@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.RTY2345RR/podcast-generator-mcp",
+  "title": "Podcast Generator MCP",
+  "description": "AI podcast generator: two cloned host voices, episode MP3, SRT transcript, chapters, RSS.",
+  "websiteUrl": "https://github.com/RTY2345RR/podcast-generator-mcp",
+  "repository": {
+    "url": "https://github.com/RTY2345RR/podcast-generator-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/miragea/podcast-generator-mcp:0.1.0",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        { "name": "MIRAGEA_API_KEY", "description": "Voice engine API key from https://miragea.ai/workspace/api", "isRequired": true, "isSecret": true, "format": "string" },
+        { "name": "PODCAST_OUTPUT_DIR", "description": "Folder for shows and episodes (default ~/Podcasts; /data in Docker)", "isRequired": false, "format": "filepath" }
+      ]
+    }
+  ]
+}

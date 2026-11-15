@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>The Voice Lab</title>
+  <description>A demo show made with podcast-generator-mcp.</description>
+  <language>en</language>
+  <link>https://raw.githubusercontent.com/RTY2345RR/podcast-generator-mcp/main/examples/two-host-podcast-demo</link>
+  <itunes:author>podcast-generator-mcp</itunes:author>
+  <itunes:explicit>false</itunes:explicit>
+  <itunes:category text="Technology"/>
+  <podcast:guid>fbb339fd-c5aa-49bf-8f4a-a8be12494e7e</podcast:guid>
+  <generator>podcast-generator-mcp (https://github.com/RTY2345RR/podcast-generator-mcp)</generator>
+  <atom:link href="https://raw.githubusercontent.com/RTY2345RR/podcast-generator-mcp/main/examples/two-host-podcast-demo/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+  <title>Meet your AI podcast hosts</title>
+  <description>Two cloned hosts, one line each.
+
+Chapters:
+00:00 Welcome</description>
+  <itunes:summary>Two cloned hosts, one line each.</itunes:summary>
+  <guid isPermaLink="false">c439cf6d-a640-5649-bfc3-3000109f1900</guid>
+  <pubDate>Sun, 15 Nov 2026 03:44:43 +0000</pubDate>
+  <enclosure url="https://raw.githubusercontent.com/RTY2345RR/podcast-generator-mcp/main/examples/two-host-podcast-demo/meet-your-ai-podcast-hosts.mp3" length="230190" type="audio/mpeg"/>
+  <itunes:duration>14</itunes:duration>
+  <itunes:episodeType>full</itunes:episodeType>
+  <itunes:explicit>false</itunes:explicit>
+  <itunes:episode>1</itunes:episode>
+  <itunes:author>podcast-generator-mcp</itunes:author>
+  <podcast:person role="host">Leo</podcast:person>
+  <podcast:person role="host">Maya</podcast:person>
+  <podcast:transcript url="https://raw.githubusercontent.com/RTY2345RR/podcast-generator-mcp/main/examples/two-host-podcast-demo/meet-your-ai-podcast-hosts.srt" type="application/x-subrip" rel="captions"/>
+  <podcast:chapters url="https://raw.githubusercontent.com/RTY2345RR/podcast-generator-mcp/main/examples/two-host-podcast-demo/meet-your-ai-podcast-hosts.chapters.json" type="application/json+chapters"/>
+</item>
+</channel>
+</rss>

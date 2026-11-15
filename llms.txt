@@ -1,0 +1,17 @@
+# Podcast Generator MCP
+
+> Open-source podcast MCP server (MIT, Python) that turns AI agents such as Claude, Cursor, Codex and VS Code into an AI podcast generator: the agent writes a two-host (or multi-host) dialogue script, the server voices each line with each host's own cloned voice, stitches one loudness-normalized MP3 and exports a transcript SRT, chapters (ID3 + Podcasting 2.0 JSON) and a podcast RSS item and feed.xml. Text to podcast inside your agent. Voices are rendered and cloned by the Miragea voice engine (https://miragea.ai/v1).
+
+Install: `uvx --from git+https://github.com/RTY2345RR/podcast-generator-mcp podcast-generator-mcp` (or Docker image `miragea/podcast-generator-mcp`) with env `MIRAGEA_API_KEY` (key from https://miragea.ai/workspace/api; agent setup guide: Install https://miragea.ai/skills/miragea-audio/install.md). Claude Code: `claude mcp add podcast-generator -s user -e MIRAGEA_API_KEY=<key> -- uvx --from git+https://github.com/RTY2345RR/podcast-generator-mcp podcast-generator-mcp`.
+
+Workflow: podcast_create_show(title, hosts=[{name, reference_audio_url, reference_text} | {name, actor_id}]) -> agent writes script as `Host: line` turns with `## Chapter` lines -> podcast_submit_script -> podcast_synthesize_lines (resumable, one voice job per line, no duplicate jobs on retry) -> podcast_stitch_episode (MP3, SRT, TXT, chapters JSON/TXT, RSS item, feed.xml). Shortcut: podcast_generate_episode. Status: podcast_episode_status. Reference clips must be direct public WAV/MP3 URLs (not Hugging Face).
+
+## Docs
+- [README](https://github.com/RTY2345RR/podcast-generator-mcp#readme): features, quick start, script format, tools, RSS publishing, comparison, FAQ, troubleshooting
+- [Example: two-host podcast demo (MP3, SRT, chapters, RSS)](https://github.com/RTY2345RR/podcast-generator-mcp/tree/main/examples/two-host-podcast-demo)
+- [Changelog](https://github.com/RTY2345RR/podcast-generator-mcp/blob/main/CHANGELOG.md)
+
+## Related
+- [YouTube Dubbing MCP](https://github.com/RTY2345RR/youtube-dubbing-mcp): AI dubbing with one cloned voice per speaker
+- [TTS MCP Server](https://github.com/RTY2345RR/miragea-voice-mcp): text-to-speech, voiceover and SRT/VTT captions for AI agents
+- [Voice Agent Skills](https://github.com/RTY2345RR/miragea-agent-skills)

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="420" viewBox="0 0 1600 420" role="img" aria-label="podcast-generator-mcp workflow: AI agent writes the script, create show with cloned host voices, submit script, synthesize each line with the Miragea voice engine, stitch MP3 with SRT, chapters and RSS">
+<rect width="1600" height="420" fill="#0d111c"/>
+<text x="40" y="52" font-family="DejaVu Sans,Arial,sans-serif" font-weight="bold" font-size="28" fill="#ebeef5">How podcast-generator-mcp turns a script into a podcast episode</text>
+<rect x="40" y="110" width="272" height="220" rx="18" fill="#161b2a" stroke="#a78bfa" stroke-width="3"/>
+<text x="58" y="160" font-family="DejaVu Sans,Arial,sans-serif" font-weight="bold" font-size="30" fill="#a78bfa">1</text>
+<text x="58" y="200" font-family="DejaVu Sans,Arial,sans-serif" font-weight="bold" font-size="22" fill="#ebeef5">AI agent</text>
+<text x="58" y="243" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#ebeef5">writes the two-host script</text>
+<text x="58" y="276" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" fill="#8c96af">Claude · Cursor · Codex</text>
+<line x1="316" y1="220" x2="344" y2="220" stroke="#8c96af" stroke-width="4"/><polygon points="348,220 336,211 336,229" fill="#8c96af"/>
+<rect x="352" y="110" width="272" height="220" rx="18" fill="#161b2a" stroke="#60a5fa" stroke-width="3"/>
+<text x="370" y="160" font-family="DejaVu Sans,Arial,sans-serif" font-weight="bold" font-size="30" fill="#60a5fa">2</text>
+<text x="370" y="200" font-family="DejaVu Sans Mono,Consolas,monospace" font-weight="bold" font-size="17" fill="#ebeef5">podcast_create_show</text>
+<text x="370" y="243" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#ebeef5">hosts + cloned voices</text>
+<text x="370" y="276" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" fill="#8c96af">from reference clips</text>
+<line x1="628" y1="220" x2="656" y2="220" stroke="#8c96af" stroke-width="4"/><polygon points="660,220 648,211 648,229" fill="#8c96af"/>
+<rect x="664" y="110" width="272" height="220" rx="18" fill="#161b2a" stroke="#facc15" stroke-width="3"/>
+<text x="682" y="160" font-family="DejaVu Sans,Arial,sans-serif" font-weight="bold" font-size="30" fill="#facc15">3</text>
+<text x="682" y="200" font-family="DejaVu Sans Mono,Consolas,monospace" font-weight="bold" font-size="17" fill="#ebeef5">podcast_submit_script</text>
+<text x="682" y="243" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#ebeef5">Host: line, ## chapters</text>
+<text x="682" y="276" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" fill="#8c96af">validated, saved to disk</text>
+<line x1="940" y1="220" x2="968" y2="220" stroke="#8c96af" stroke-width="4"/><polygon points="972,220 960,211 960,229" fill="#8c96af"/>
+<rect x="976" y="110" width="272" height="220" rx="18" fill="#161b2a" stroke="#f472b6" stroke-width="3"/>
+<text x="994" y="160" font-family="DejaVu Sans,Arial,sans-serif" font-weight="bold" font-size="30" fill="#f472b6">4</text>
+<text x="994" y="200" font-family="DejaVu Sans Mono,Consolas,monospace" font-weight="bold" font-size="17" fill="#ebeef5">podcast_synthesize_lines</text>
+<text x="994" y="243" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#ebeef5">one voice job per line</text>
+<text x="994" y="276" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" fill="#8c96af">Miragea voices · resumable</text>
+<line x1="1252" y1="220" x2="1280" y2="220" stroke="#8c96af" stroke-width="4"/><polygon points="1284,220 1272,211 1272,229" fill="#8c96af"/>
+<rect x="1288" y="110" width="272" height="220" rx="18" fill="#161b2a" stroke="#4ade80" stroke-width="3"/>
+<text x="1306" y="160" font-family="DejaVu Sans,Arial,sans-serif" font-weight="bold" font-size="30" fill="#4ade80">5</text>
+<text x="1306" y="200" font-family="DejaVu Sans Mono,Consolas,monospace" font-weight="bold" font-size="17" fill="#ebeef5">podcast_stitch_episode</text>
+<text x="1306" y="243" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#ebeef5">MP3 · SRT · chapters · RSS</text>
+<text x="1306" y="276" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" fill="#8c96af">-16 LUFS, ID3 chapters</text>
+<text x="40" y="380" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#8c96af">Re-run any step: finished lines are kept, running jobs are resumed, edited lines are re-voiced.</text></svg>
